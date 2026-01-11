@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Create a simple form with Add and Reset buttons takes user`s information (name age and email) with validation for each field and all fields are required.
+Every time the user enters a right data and press Add button the data is displayed in the table as shown in fig 3
+-->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <button type="submit" id="addBtn">Add</button>
+        <button type="reset" id="resetBtn">Reset</button>
+    </form>
+    <br>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>   
+    </table>
+        <script src="script.js"></script>
+</body>
+</html>

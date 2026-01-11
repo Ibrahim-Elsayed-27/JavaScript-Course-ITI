@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome to the Registration Page</h1>
+
+    <script>
+    var data = location.search.substring(1).split("&");
+    var name = data[0].split("=")[1].replace(/\+/g, ' ');
+    var gender = data[1].split("=")[1];
+    var email = data[2].split("=")[1];    
+    var mobile = data[3].split("=")[1];
+    console.log(name);
+    console.log(gender);
+    console.log(email);
+    console.log(mobile);
+    if(gender === "male"){
+        var title = "Mr. ";
+    } else {
+        var title = "Ms. "; 
+    }
+    alert("Hello " + title + name + ", " + gender + ", " + email + ", " + mobile);
+    </script>
+</body>
+</html>

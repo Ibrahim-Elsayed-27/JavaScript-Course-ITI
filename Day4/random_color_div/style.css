@@ -1,0 +1,22 @@
+
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+}
+
+div span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.color-generator {
+    background-color: black;
+}
