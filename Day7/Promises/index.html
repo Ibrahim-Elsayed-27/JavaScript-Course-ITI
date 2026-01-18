@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    #userButtons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .user-btn {
+      padding: 10px 15px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .user-btn:hover {
+      background-color: #c0d6ff;
+    }
+    .user-btn.active {
+      background-color: #ffcccc;
+    }
+    #posts {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    #posts li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Users</h2>
+  <div id="userButtons"></div>
+
+  <h3>Posts</h3>
+  <ul id="posts"></ul>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
